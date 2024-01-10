@@ -5,14 +5,14 @@
 
 ## Introduction
 
-This is a FastAPI project that serves as a backend for [Your Project Name]. It follows modern web development practices, including RESTful APIs, authentication, and database integration.
+This is a FastAPI project which have user management and product catalog. It follows modern web development practices, including RESTful APIs, authentication, and database integration.
 
 ## Features
 
 - **FastAPI:** Utilizes the FastAPI framework for building APIs with Python 3.8+ type hints.
 - **Authentication:** Implements JWT-based authentication for securing API endpoints.
-- **Database Integration:** Connects to a PostgreSQL database for storing and retrieving data.
-- **MongoDB Integration:** Integrates with MongoDB for specific functionalities.
+- **Database Integration:** Connects to a PostgreSQL database for storing and retrieving relational user data.
+- **MongoDB Integration:** Connects with MongoDB for product catalog.
 - **Docker Support:** Includes Dockerfiles for containerization and docker-compose for managing dependencies.
 
 
@@ -64,10 +64,24 @@ password = test_pass
 ### Running the Application
 
 
-#### With Docker
-
 ```bash
 docker-compose up -–build -d
 ```
+
+The above command will install the necessary dependencies and initialise the project with loading the sample data.
+
+You can view the list of all the api and use it on Swagger UI by
+
+```bash
+http://localhost:8000/docs
+```
+
+or
+
+```bash
+http://127.0.0.1:8000/docs
+```
+
+<img width="1440" alt="image" src="https://github.com/ayushkumargarg1997/Finkraft_product_assignment/assets/73874155/bf5e790a-52f0-4fc7-a417-b77e2881396d">
 
 

@@ -1,0 +1,13 @@
+pymongo
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+bcrypt
+python-jose
+passlib
+python-dotenv
+PyJWT
+pydantic
+pandas
+asyncpg
